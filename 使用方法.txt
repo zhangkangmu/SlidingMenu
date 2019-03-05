@@ -1,0 +1,10 @@
+1、androidstudio中只需要导入library库就可以了
+2、方法集成SlidingFragmentActivity
+3、//设置左边的布局
+    setBehindContentView(R.layout.left_menu);
+    //获取SlidingMenu方法
+    SlidingMenu slidingMenu = getSlidingMenu();
+    //全屏触摸
+    slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+    //屏幕预留200像素宽度,是主屏，不是侧滑的面板
+    slidingMenu.setBehindOffset(500);
